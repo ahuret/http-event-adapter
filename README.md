@@ -17,9 +17,11 @@ All is configurable, contribution opened :)
 
 ## Examples
 
+```
 curl --data-binary "@examples/example.json" -X POST http://localhost:8081/json
 curl --data-binary "@examples/example.csv" -X POST http://localhost:8081/csv
 curl --data-binary "@examples/example.yaml" -X POST http://localhost:8081/yaml
+```
 
 those requests use examples/person.tmpl as template (see configuration below)
 
