@@ -1,4 +1,19 @@
-# GOMAPPER
+# http-event-adapter
+
+Generic way to send business events inside sink
+It simply listen from HTTP requests and using gotemplate, transform request, and send the output data inside a sink.
+All is configurable, contribution opened :)
+
+## Supported format
+
+- csv
+- yaml
+- json
+
+## Writers
+
+- fmt
+- nats (to do)
 
 ## Examples
 
