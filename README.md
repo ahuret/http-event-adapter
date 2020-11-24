@@ -38,3 +38,7 @@ type EventConfiguration struct {
 	ExtendedFunctions map[string][]string `config:"extendedFunctions"` (specify informations for extended functions. key is link for the so file, values are all exporter functions you want to use in templates)
 }
 ```
+
+## TODO
+
+- one separator per csv route
