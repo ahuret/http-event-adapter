@@ -20,8 +20,8 @@ func GetWriter(cfg *WriterConfiguration, name string) (Writer, error) {
 	var writer Writer
 	var err error
 	switch name {
-	case "fmt":
-		writer, err = NewFmtWriter(cfg)
+	case "nats":
+		writer, err = NewNatsWriter(cfg)
 	default:
 		err = fmt.Errorf("unknown writer name %s", name)
 	}

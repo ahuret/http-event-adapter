@@ -46,6 +46,9 @@ func main() {
 	}
 	events := make(map[string]*adapter.EventConfiguration)
 	cfg.Load("events", &events)
+	if len(events) == 0 {
+		l.Fatal("no event configuration ... exiting")
+	}
 	for path, event := range events {
 		c, err := a.AdaptEvent(event)
 		if err != nil {
